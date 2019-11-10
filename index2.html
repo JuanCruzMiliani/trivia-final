@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Trivia</title>
+    <link rel="stylesheet" href="estilo2.css">
+    <script type="text/javascript">
+window.onload = function(){
+ getElementById('boton').onclick=sumar;
+ }
+ function sumar() {
+  var 1 =document.getElementByid("1").value;
+  var 2 =document.getElementByid("2").value;
+  var 3 =document.getElementByid("3").value;
+  var 4 =document.getElementByid("4").value;
+  var 5 =document.getElementByid("5").value;
+  var resultado =  parseInt(1)  +  parseInt(2)  +  parseInt(3)  +  parseInt(4)  +  parseInt(5);
+  if (resultado =  5 ) { alert ( " sos un genio " );};
+  if (resultado <  5  && resultado >  3 ) { alert ( " muy bien " );};
+  if (resultado =  3 ) { alert ( " estuviste cerca " );};
+  if (resultado <  3  && resultado > 0 ) { alert ( " ponete a estudiar " );}
+  if (resultado =  0 ) { alert ( " sos un burro " );}
+ }
+</script>
+  </head>
+  <body>
+    <div class="titulo">
+    <h1>Trivia</h1>
+    </div>
+    <div class="body">
+    <form id="encuesta">
+    <h2>PREGUNTA 1</h2>
+    <h3>¿Quei descubrio America?</h3>
+
+      <label for="1">Sarmiento</label>
+      <input type="radio" name="1" value="0">
+      <label for="1">Cristobal Colon</label>
+      <input type="radio" name="1" value="1">
+      <label for="1">San Martin</label>
+      <input type="radio" name="1" value="0">
+
+    <hr>
+    <h2>PREGUNTA 2</h2>
+    <h3>¿?Cuanto es 2+3*4/7</h3>
+
+      <label for="2">2,85</label>
+      <input type="radio" name="2" value="0">
+      <label for="2">4,71</label>
+      <input type="radio" name="2" value="0">
+      <label for="2">3,71</label>
+      <input type="radio" name="2" value="1">
+
+    <hr>
+    <h2>PREGUNTA 3</h2>
+    <h3>¿como se llama la raya que tiene la Ñ?</h3>
+
+      <label for="3">virgulilla</label>
+      <input type="radio" name="3" value="1">
+      <label for="3">tilde</label>
+      <input type="radio" name="3" value="0">
+      <label for="3">diéresis</label>
+      <input type="radio" name="3" value="0">
+
+    <hr>
+    <h2>PREGUNTA 4</h2>
+    <h3>¿Cual es cual es el continente más grande?</h3>
+
+      <label for="4">Europeo</label>
+      <input type="radio" name="" value="0">
+      <label for="4">Americano</label>
+      <input type="radio" name="" value="0">
+      <label for="4">Asiatico</label>
+      <input type="radio" name="" value="1">
+
+    <hr>
+    <h2>PREGUNTA 5</h2>
+    <h3>¿Cual es el animal arino más grande?</h3>
+
+      <label for="5">Ballena Azul</label>
+      <input type="radio" name="5" value="1">
+      <label for="5">Cachalote</label>
+      <input type="radio" name="5" value="0">
+    <br>
+    <br>
+    <input type="button" id="boton" value="ingresar valores">
+  </form>
+  <form action="index1.html" method="POST">
+      <a href='index.html'>Volver a registrase</a>
+      </form>
+    </div>
+  </body>
+</html>
