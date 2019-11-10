@@ -1,0 +1,41 @@
+h1{
+  font-family: "Time New Romance", serif;
+  text-align: center;
+  color: black;
+}
+body{
+  background: black;
+  margin: auto;
+}
+  div.body{
+  background: white;
+  margin-top: 15px;
+  margin: auto;
+  height: 875px;
+  width: 1000px;
+}
+div.titulo{
+  background: white;
+  height: 55px;
+  width: 1000px;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+}
+p{
+  font-family: "Time New Romance", serif;
+  text-align: left;
+  font-size: 25px;
+}
+h2{
+  color: purple;
+  font-family: "Time New Romance", serif;
+  font-size: 25px;
+  margin-left: 15px;
+}
+h3{
+  font-family: "Time New Romance", serif;
+  text-align: left;
+  color: black;
+}
+
