@@ -252,20 +252,3 @@ void derivar(const Gramatica g) {
 }
 
 // MAIN
-int main(){
-    Gramatica g;
-    int escape = 1;
-    do{
-        printf("Ingresar una Gramatica que sea regular\n");
-        cargarNoTerminales(&g);
-        cargarTerminales(&g);
-        cargarProducciones(&g);
-        cargarAxioma(&g);
-    }while(! es_gramatica_regular(g));
-    while( escape ){
-        derivar(g);
-        printf("Ponga 1 para generar otra palabra o 0 para terminar\n");
-        scanf("%d", &escape);
-    }
-    return 0;
-}
